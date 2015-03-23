@@ -1,0 +1,84 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+.banniere {
+	width: 100%;
+	height: 300px;
+}
+#content {
+	width: 100%;
+}
+.table {
+	margin: auto;
+}
+.table th > img {
+	width: 75%;
+	height: 120px;
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+.td {
+	padding: 0;
+	width: 120px;
+	height: 120px;
+	transform-style: preserve-3d;
+}
+.td img {
+	width: 120px;
+	height: 120px;
+	padding: auto;
+}
+.ch-item {
+	padding-top: 15px;
+	cursor: all-scroll;
+	perspective: 500px;
+}
+.ch-info > img {
+	display: block;
+	transition: all 0.4s linear;
+	transform-origin: 50% 0%;
+}
+.front {
+	box-shadow: inset 0 0 0 10px rgba(0,0,0,0.3);
+}
+.back {
+	transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	opacity: 0;
+}
+.td > div {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	display: block;
+	transition: all 0.4s linear;
+	transform-origin: 50% 0%;
+	margin-top: -64px;
+}
+.ch-item:hover .front {
+	transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+	opacity: 0;
+}
+.ch-item:hover .back {
+	transform: rotate3d(1,0,0,0deg);
+	opacity: 1;
+}
+.name {
+	font-family: Impact, sans serif;
+	color: black;
+	text-align: center;
+	text-shadow: red 3px 3px 3px;
+	margin-top: -35px;
+}
+.footer {
+	display: block;
+	width: 100%;
+	height: 50px;
+	color: silver;
+	font-size: 14px;
+	margin-top: 20px;
+	padding-top: 20px;
+	text-align: center;
+}
